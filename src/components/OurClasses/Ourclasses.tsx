@@ -9,7 +9,7 @@ import { Link as LinkScroll } from 'react-scroll/modules';
 import useMediaQuery from '@/hooks/useMediaQuery';
 
 type Props = {
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 // const Ourclasses = ({ setSelectedPage }: Props) => {

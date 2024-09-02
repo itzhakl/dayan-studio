@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link as LinkScroll } from 'react-scroll/modules';
 type Props = {
   benefit: BenefitType;
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const childVariant = {

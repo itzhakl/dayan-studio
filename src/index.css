@@ -19,11 +19,11 @@
   background: var(--background);
 } */
 
-html {
+/* html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-}
+} */
 
-circle.enable-trigger-circle {
+/* circle.enable-trigger-circle {
   fill: black;
-}
+} */

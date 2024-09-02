@@ -17,11 +17,10 @@ export default {
         'primary-100': '#005c64',
         'primary-300': '#448cba',
       },
-      backgroundImage: (theme) => ({
-        'gradient-yellowred':
-          'linear-gradient(90deg, #FF616A 0%, #FFC837 100%)',
+      backgroundImage: {
         'mobile-home': "url('./assets/HomePageGraphic.png')",
-      }),
+        'desktop-home': "url('./assets/HomePageGraphic.png')",
+      },
       fontFamily: {
         dmsans: ['DM Sans', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],

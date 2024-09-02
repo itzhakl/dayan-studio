@@ -9,7 +9,7 @@ import ActionButton from '@/shared/ActionButton';
 type Props = {
   isTopOfPage: boolean;
   selectedPage: string;
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
@@ -30,7 +30,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
                 {/* Links */}
-                <div className={`${flexBetween} gap-8 text-sm`}>
+                <div className={`${flexBetween} gap-8 text-[1rem]`}>
                   {Links.map((page) => (
                     <Link
                       key={page}
@@ -88,7 +88,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           {/* Menu Items */}
-          <div className="flex flex-col gap-12 text-center text-3xl">
+          <div className="flex flex-col gap-12 text-center text-[2rem]">
             {Links.map((page) => (
               <Link
                 setIsMenuToggled={setIsMenuToggled}

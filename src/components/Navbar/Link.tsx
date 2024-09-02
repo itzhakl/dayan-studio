@@ -4,7 +4,7 @@ import { HebrewDisplayName, SelectedPage } from '@/shared/types';
 type Props = {
   page: string;
   selectedPage: string;
-  setSelectedPage: (value: string) => void;
+  setSelectedPage: (value: SelectedPage) => void;
   setIsMenuToggled?: (value: boolean) => void;
 };
 
@@ -15,7 +15,7 @@ const Link = ({
   setIsMenuToggled,
 }: Props) => {
   const lowerCasePage = page.toLowerCase().replace(/ /g, '') as SelectedPage;
-  const selectedPagesArray = Object.values(SelectedPage);
+  // const selectedPagesArray = Object.values(SelectedPage);
   return (
     <LinkScroll
       smooth
