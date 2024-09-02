@@ -43,7 +43,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div dir="rtl" className="bg-secondary text-primary-text w-full">
+    <div dir="rtl" className="bg-secondary text-primary-text max-w-svw">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
